@@ -20,38 +20,40 @@
         ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         li {
-            margin: 30px 0;
-            display: inline-block;
-            width: 300px;
+            display: block;
         }
         a {
-            display: block;
             text-decoration: none;
-            color: #4CAF50;
-        }
-        .camera-img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .camera-img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        p {
+            display: block;
             font-size: 18px;
             font-weight: bold;
             color: #333;
-            margin-top: 10px;
+            background-color: #4CAF50;
+            padding: 20px;
+            border-radius: 50px;
+            width: 200px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #45a049;
         }
         .vlc {
             color: red;
             font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            font-weight: normal;
+            margin-top: 20px;
         }
         .store-links a {
             margin: 0 10px;
@@ -65,25 +67,22 @@
     <ul>
         <li>
             <a href="rtsp://admin:zevkamere55@zevkamere.ddns.net:20554/onvif1" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Camera_icon_%28Font_Awesome%29.svg" alt="Kamera 1 Parking" class="camera-img">
-                <p>Kamera 1 Parking</p>
+                Kamera 1 Parking
             </a>
         </li>
         <li>
             <a href="rtsp://admin:zevkamere55@zevkamere.ddns.net:10554/onvif1" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Camera_icon_%28Font_Awesome%29.svg" alt="Kamera 2 Parking" class="camera-img">
-                <p>Kamera 2 Parking</p>
+                Kamera 2 Parking
             </a>
         </li>
         <li>
             <a href="rtsp://admin:zevkamere55@zevkamere.ddns.net:30554/onvif1" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Camera_icon_%28Font_Awesome%29.svg" alt="Kamera 3 Ulaz" class="camera-img">
-                <p>Kamera 3 Ulaz</p>
+                Kamera 3 Ulaz
             </a>
         </li>
     </ul>
 
-    <p>Preuzmite <span class="vlc">VLC player</span> (za <a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" target="_blank">Android</a> ili <a href="https://apps.apple.com/us/app/vlc-media-player/id650377962" target="_blank">iPhone</a>) zatim kliknite na link kamere.</p>
+    <p>Preuzmite <span class="vlc">VLC player</span> (sa <a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" target="_blank">Android</a> ili <a href="https://apps.apple.com/us/app/vlc-media-player/id650377962" target="_blank">iPhone</a>) zatim kliknite na link kamere.</p>
 
 </body>
 </html>
