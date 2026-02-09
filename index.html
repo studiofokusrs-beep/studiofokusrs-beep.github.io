@@ -32,6 +32,18 @@
         a:hover {
             text-decoration: underline;
         }
+        .vlc {
+            color: red;
+            font-weight: bold;
+        }
+        .vlc-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .store-links a {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +56,16 @@
         <li><a href="rtsp://admin:zevkamere55@zevkamere.ddns.net:30554/onvif1" target="_blank">Kamera 3 Ulaz</a></li>
     </ul>
 
-    <p>Preuzmite VLC player (sa google play ili app store) zatim kliknite na link kamere</p>
+    <p>Preuzmite <span class="vlc"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/VLC_icon_2019.svg" alt="VLC Icon" class="vlc-icon"> VLC player</span> (sa Google Play ili App Store) zatim kliknite na link kamere.</p>
+
+    <div class="store-links">
+        <a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_Logo.svg" alt="Google Play" width="150">
+        </a>
+        <a href="https://apps.apple.com/us/app/vlc-media-player/id650377962" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/App_Store_Logo.png" alt="App Store" width="150">
+        </a>
+    </div>
 
 </body>
 </html>
